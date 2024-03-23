@@ -1,0 +1,66 @@
+/* 무한 스크롤 */
+.loading-scroll {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.loading-scroll.show {
+  display: block;
+}
+
+.loading-scroll .the-loader {
+  width: 35px;
+  height: 35px;
+  border-top: 2px solid rgb(244, 140, 157);
+  border-right: 2px solid rgb(243, 165, 178);
+  animation: loader 1s infinite linear;
+  border-radius: 50%;
+}
+
+/* 상품 추가 */
+.loading-addItem {
+  width: 150px;
+  height: 270px;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+}
+
+.loading-addItem.show {
+  display: block;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(360deg)}
+}
+
+.loading-addItem > img {
+  width: 150px;
+}
+
+.loading-addItem .the-loader {
+  width: 24px;
+  height: 24px;
+  margin: 20px auto;
+  border-top: 2px solid rgb(244, 140, 157);
+  border-right: 2px solid rgb(243, 165, 178);
+  animation: loader 1s infinite linear;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .loading-addItem {
+    width: 130px;
+    left: 240px;
+  }
+  .loading-addItem > img {
+    width: 130px;
+  }
+}

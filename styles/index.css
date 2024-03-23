@@ -1,0 +1,75 @@
+.wrap {
+  position: relative;
+}
+
+.wrap .inner::before {
+  content: "";
+  background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/copy-1680225136-4EC9B94EC9EA0EC8BA4_PC16.9_2.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  opacity: .4;
+  z-index: -1;
+}
+
+.wrap .inner {
+  position: relative;
+}
+
+.wrap .inner .btn-box {
+  width: 1020px;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap .inner .btn-link {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s linear;
+  background-color: pink;
+  box-shadow: 0 2px 7px 6px rgb(243, 102, 141, 0.43);
+  margin-top: 130px;
+}
+
+.wrap .inner .btn-link:hover {
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 2px 7px 3px rgb(243, 102, 141, 0.43);
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    width: 447px;
+  }
+  .wrap .inner::before {
+    width: 447px;
+    background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/4EC9B94_EC9584EC9DB4ED8FB02.png');
+    background-size: cover;
+  }
+  .wrap .inner .btn-box {
+    display: block;
+    justify-content: center;
+  }
+  .wrap .inner .btn-box {
+    width: 100%;
+  }
+  .wrap .inner .btn-link {
+    width: 150px;
+    height: 75px;
+    border-radius: 30px;
+    margin-top: 70px;
+    margin-left: 150px;
+  }
+}

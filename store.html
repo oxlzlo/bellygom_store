@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BellyGom</title>
+
+  <!-- CSS 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/store.css">
+  <link rel="stylesheet" href="./styles/addForm.css">
+  <link rel="stylesheet" href="./styles/loading.css">
+
+  <!-- JS -->
+  <script defer src="./script/store.js"></script>
+  <script defer src="./script/common.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <div class="title">
+        <a href="/"><img src="./images/header_title.png" alt="title_BELLYGOM"></a>
+      </div>
+      <div class="link_box">
+        <a href="./story.html"><div class="to_link">STORY</div></a>
+        <a href="./login.html"><div class="to_link">LOGIN</div></a>
+        <div class="to_link" id="logout">LOGOUT</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WRAP -->
+  <div class="wrap">
+    <div class="inner">
+      <div class="inner_box">
+        <div class="title">
+          <a href="./store.html">STORE</a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="상품을 검색해 보세요" onfocus="this.placeholder=''" onblur="this.placeholder='상품을 검색해 보세요'">
+          <div class="searchBtn"><img src="./images/icon_search1.png" alt=""></div>
+        </div>
+        <div class="buttons">
+          <div class="checkAllCheckbox">
+            <input type="button" value="전체 선택">
+            <input type="button" value="전체 해제">
+          </div>
+          <div class="edit">
+            <input type="button" value="등록">
+            <input type="button" value="삭제">
+          </div>
+        </div>
+        <!-- 상품 리스트 -->
+        <ul class="container">
+          <li class="item_container">
+              <div class="item"><input type="checkbox"></div>
+              <div class="item"><img src="./images/item1.png" alt="item1"></div>
+              <div class="item">빅 벨리곰 스탠딩 인형</div>
+              <div class="item"> <!-- 수량 조절 -->
+                <span class="count"> 
+                  <a href="javascript:void(0)" class="minus">-</a>
+                  <span class="result">0</span>
+                  <a href="javascript:void(0)" class="plus">+</a>
+                </span>
+              </div>
+              <div class="item">
+                <span class="itemCost">69000</span> 
+              </div>
+              <div class="item"> <!-- 가격 조절 -->
+                <span class="totalCost">₩0</span>
+              </div>
+              <div class="item"><img class="shopping" src="./images/icon_shopping.png" alt=""></div>
+          </li>
+          <li class="item_container">
+            <div class="item"><input type="checkbox"></div>
+            <div class="item"><img src="./images/item2.jpg" alt="item1"></div>
+            <div class="item">벨리곰 제주감귤 키링인형</div>
+            <div class="item"> <!-- 수량 조절 -->
+              <span class="count"> 
+                <a href="javascript:void(0)" class="minus">-</a>
+                <span class="result">0</span>
+                <a href="javascript:void(0)" class="plus">+</a>
+              </span>
+            </div>
+            <div class="item">
+              <span class="itemCost">13000</span> 
+            </div>
+            <div class="item"> <!-- 가격 조절 -->
+              <span class="totalCost">₩0</span>
+            </div>
+            <div class="item"><img class="shopping" src="./images/icon_shopping.png" alt=""></div>
+          </li>
+          <li class="item_container">
+            <div class="item"><input type="checkbox"></div>
+            <div class="item"><img src="./images/item3.png" alt="item1"></div>
+            <div class="item">벨리곰 랜덤 피규어</div>
+            <div class="item"> <!-- 수량 조절 -->
+              <span class="count"> 
+                <a href="javascript:void(0)" class="minus">-</a>
+                <span class="result">0</span>
+                <a href="javascript:void(0)" class="plus">+</a>
+              </span>
+            </div>
+            <div class="item">
+              <span class="itemCost">9000</span> 
+            </div>
+            <div class="item"> <!-- 가격 조절 -->
+              <span class="totalCost">₩0</span>
+            </div>
+            <div class="item"><img class="shopping" src="./images/icon_shopping.png" alt=""></div>
+          </li>
+          <li class="item_container">
+            <div class="item"><input type="checkbox"></div>
+            <div class="item"><img src="./images/item4.png" alt="item1"></div>
+            <div class="item">턴테이블 블루투스 스피커</div>
+            <div class="item"> <!-- 수량 조절 -->
+              <span class="count"> 
+                <a href="javascript:void(0)" class="minus">-</a>
+                <span class="result">0</span>
+                <a href="javascript:void(0)" class="plus">+</a>
+              </span>
+            </div>
+            <div class="item">
+              <span class="itemCost">40000</span> 
+            </div>
+            <div class="item"> <!-- 가격 조절 -->
+              <span class="totalCost">₩0</span>
+            </div>
+            <div class="item"><img class="shopping" src="./images/icon_shopping.png" alt=""></div>
+          </li>
+          <li class="item_container">
+            <div class="item"><input type="checkbox"></div>
+            <div class="item"><img src="./images/item5.jpg" alt="item1"></div>
+            <div class="item">아시아나항공X벨리곰 코스튬 키링인형(승무원)</div>
+            <div class="item"> <!-- 수량 조절 -->
+              <span class="count"> 
+                <a href="javascript:void(0)" class="minus">-</a>
+                <span class="result">0</span>
+                <a href="javascript:void(0)" class="plus">+</a>
+              </span>
+            </div>
+            <div class="item">
+              <span class="itemCost">26000</span> 
+            </div>
+            <div class="item"> <!-- 가격 조절 -->
+              <span class="totalCost">₩0</span>
+            </div>
+            <div class="item"><img class="shopping" src="./images/icon_shopping.png" alt=""></div>
+          </li>
+          <div class="loading-scroll">
+            <div class="the-loader"></div>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 새로운 상품 정보 입력 -->
+  <div class="addForm">
+    <div class="imagePreview">
+      <img src="" alt="이미지 미리보기" id="imagePreview">
+    </div>
+    <div class="filebox">
+      <label for="itemImage">파일 선택</label>
+      <input type="file" id="itemImage" accept="image/*">
+    </div>
+    <input type="text" id="itemName" placeholder="아이템 이름">
+    <input type="number" id="itemCost" placeholder="아이템 가격">
+    <input type="button" id="addBtn" value="아이템 추가">
+    <input type="button" id="cancelBtn" value="취소">
+  </div>
+
+  <!-- 로딩 에니메이션 -->
+  <div class="loading-addItem">
+    <img src="./images/loading_belly.png" alt="">
+    <div class="the-loader"></div>
+  </div>
+
+  
+
+</body>
+
+</html>

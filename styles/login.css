@@ -1,0 +1,136 @@
+.wrap {
+  position: relative;
+}
+
+.wrap .inner::before {
+  content: "";
+  background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/copy-1680225136-4EC9B94EC9EA0EC8BA4_PC16.9_2.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  opacity: .2;
+  z-index: -1;
+}
+
+.wrap .inner {
+  position: relative;
+}
+
+.wrap .inner .loginBox {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.wrap .inner .loginBox .image img {
+  width: 200px;
+  height: 200px;
+  margin: 50px 0 0 150px;
+}
+
+.wrap .inner .loginBox .idBox,
+.wrap .inner .loginBox .pwBox {
+  width: 300px;
+  height: 40px;
+  margin: 40px 0 0 100px;
+  position: relative;
+
+}
+
+.wrap .inner .loginBox .pwBox {
+  margin-top: 20px;
+}
+
+.wrap .inner .loginBox .idBox img,
+.wrap .inner .loginBox .pwBox img {
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 20px;
+  z-index: 10;
+  color: #000;
+}
+
+.wrap .inner .loginBox .idBox input,
+.wrap .inner .loginBox .pwBox input {
+  width: 238px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  background-color: #ffdfdf;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 60px;
+  border-radius: 10px;
+}
+
+.wrap .inner .loginBox .btnBox {
+  width: 250px;
+  height: 50px;
+  margin-left: 125px;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap .inner .loginBox .btnBox .btn {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdfdf;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    width: 447px;
+    height: 1000px;
+  }
+  .wrap .inner::before {
+    width: 447px;
+    background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/4EC9B94_EC9584EC9DB4ED8FB02.png');
+    background-size: cover;
+  }
+  .wrap .inner .loginBox {
+    width: 350px;
+    top: 200px;
+  }
+  .wrap .inner .loginBox .image img {
+    width: 170px;
+    height: 170px;
+    margin: 50px 0 0 90px;
+  }
+  .wrap .inner .loginBox .idBox,
+  .wrap .inner .loginBox .pwBox {
+    width: 250px;
+    margin: 40px 0 0 50px;
+  }
+  .wrap .inner .loginBox .pwBox {
+    margin-top: 20px;
+  }
+  .wrap .inner .loginBox .idBox input,
+  .wrap .inner .loginBox .pwBox input {
+    width: 180px;
+  }
+  .wrap .inner .loginBox .btnBox {
+    width: 200px;
+    margin: 45px 0 0 75px;
+  }
+  .wrap .inner .loginBox .btnBox .btn {
+   width: 80px; 
+  }
+
+}

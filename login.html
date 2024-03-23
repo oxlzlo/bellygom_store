@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BellyGom</title>
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="/web/upload/favicon-b60da6027de1dce42e96542fe014262d.ico">
+
+  <!-- CSS 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/login.css">
+
+
+  <!-- JS -->
+  <script defer src="./script/login.js"></script>
+  <script defer src="./script/common.js"></script>
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <div class="title">
+        <a href="/"><img src="./images/header_title.png" alt="title_BELLYGOM"></a>
+      </div>
+      <div class="link_box">
+        <a href="./story.html"><div class="to_link">STORY</div></a>
+        <a href="./store.html"><div class="to_link">STORE</div></a>
+        <div class="to_link" id="logout">LOGOUT</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WRAP -->
+  <div class="wrap">
+    <div class="inner">
+      <div class="loginBox">
+        <div class="image"><img src="./images/img_bellygom.png" alt="bellygom"></div>
+        <div class="idBox">
+          <img src="./images/icon_id.png" alt="icon_id">
+          <input type="text" placeholder="ID">
+        </div>
+        <div class="pwBox">
+          <img src="./images/icon_pw.png" alt="icon_pw">
+          <input type="password" placeholder="PASSWORD">
+        </div>
+        <div class="btnBox">
+          <div class="btn" id="loginBtn">확인</div>
+          <a href="./store.html"><div class="btn">취소</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>
