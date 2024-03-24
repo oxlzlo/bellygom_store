@@ -9,34 +9,40 @@
 }
 
 .wrap .inner .inner_box {
-  width: 1020px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+
   text-align: center;
+
+  width: 1020px;
 }
 
 .wrap .inner .inner_box .title {
+  margin-top: 80px;
+
   font-size: 30px;
   font-weight: 700;
-  margin-top: 80px;
 }
 
 .wrap .inner .inner_box .search {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+
   margin-top: 30px;
-  position: relative;
 }
 
 .wrap .inner .inner_box .search input {
   width: 600px;
   height: 30px;
+
+  text-align: center;
+
   border-radius: 20px;
   border: 2px solid pink;
-  text-align: center;
   outline: none;
 }
 
@@ -52,9 +58,9 @@
 }
 
 .wrap .inner .inner_box .buttons input {
-  cursor: pointer;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
 }
 
 .wrap .inner .inner_box .checkAllCheckbox {
@@ -63,14 +69,14 @@
 }
 
 .wrap .inner .inner_box .checkAllCheckbox input {
+  height: 25px;
   background-color: rgb(244, 140, 157);
   color: #ffffff;
-  height: 25px;
 }
 
 .wrap .inner .inner_box .edit {
-  width: 100px;
   display: flex;
+  width: 100px;
 }
 
 .wrap .inner .inner_box .edit input:first-child {
@@ -88,25 +94,25 @@
 
 
 .wrap .inner .inner_box .container {
-  width: 1000px;
-  height: 800px;
-  margin-top: 5px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 
+  width: 1000px;
+  height: 800px;
+  
+  margin-top: 5px;
 }
 
 .wrap .inner .inner_box .container .item_container {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid pink;
-
-  /* 그리드 */
   display: grid;
   grid-template-columns: 1fr 4fr 9fr 2fr 3fr 3fr 2fr;
+  align-items: center;
+  
+  width: 100%;
+  height: 120px;
+
+  border-top: 1px solid pink;
 }
 
 .wrap .inner .inner_box .container .item_container.hidden {

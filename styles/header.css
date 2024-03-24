@@ -1,38 +1,47 @@
 header {
+  position: relative;
+
   width: 100%;
   height: 80px;
+  
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
-  position: relative;
 }
 
 header .inner {
-  width: 1020px;
-  height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  width: 1020px;
+  height: 100%;
+
   text-align: center;
 }
 
 header .inner .title {
-  width: 150px;
-  height: 40px;
   position: absolute;
   top: 50%;
-  margin-top: -20px;
+
   display: flex;
+
+  width: 150px;
+  height: 40px;
+
+  margin-top: -20px;
 }
 
 header .inner .link_box {
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 250px;
 }
 
 header .inner .to_link {

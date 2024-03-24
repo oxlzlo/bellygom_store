@@ -1,15 +1,15 @@
 /* COMMON */
-
 html {
   font-family: 'Montserrat','Noto Sans KR','Malgun Gothic','맑은 고딕',Dotum,'돋움','AppleGothic','Apple SD Gothic Neo',sans-serif;
 }
 
 body {
-  margin: auto;
-  width: 100%;
-  min-width: 1020px;
-  margin: 0 auto;
   position: relative;
+  
+  min-width: 1020px;
+  width: 100%;
+  
+  margin: 0 auto;
 }
 
 a {

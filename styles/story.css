@@ -3,14 +3,17 @@
 }
 
 .wrap .inner::before {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 1150px;
+
   content: "";
   background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/copy-1680225136-4EC9B94EC9EA0EC8BA4_PC16.9_2.jpg');
   background-size: contain;
-  position: absolute;
-  width: 100%;
-  height: 1150px;
+
   opacity: .08;
-  z-index: -1;
 }
 
 .wrap .inner {
@@ -18,19 +21,21 @@
 }
 
 .wrap .inner .inner_box {
-  width: 1020px;
-  height: 1000px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+
+  width: 1020px;
+  height: 1000px;
+
   line-height: 1.5;
   text-align: center;
 }
 
 .wrap .inner .inner_box .title {
+  margin-top: 50px;
   font-size: 30px;
   font-weight: 700;
-  margin-top: 50px;
 }
 
 .wrap .inner .inner_box .story {
@@ -41,16 +46,19 @@
 
 /* BELLYGON */
 .wrap .inner .inner_box .bellygom {
-  width: 1020px;
-  height: 360px;
-  margin-top: 60px;
   display: flex;
   justify-content: space-between;
+
+  width: 1020px;
+  height: 360px;
+  
+  margin-top: 60px;
 }
 
 .wrap .inner .inner_box .bellygom > img {
   width: 300px;
   height: 320px;
+
   margin-left: 80px;
 }
 
@@ -70,16 +78,19 @@ padding: 0 30px;
 
 /* GGONYANG */
 .wrap .inner .inner_box .ggoyang {
-  width: 1020px;
-  height: 310px;
-  padding-top: 80px;
   display: flex;
   justify-content: space-between;
+
+  width: 1020px;
+  height: 310px;
+  
+  padding-top: 80px;
 }
 
 .wrap .inner .inner_box .ggoyang > img {
   width: 250px;
   height: 320px;
+
   margin-right: 80px;
 }
 
@@ -94,9 +105,9 @@ padding: 0 30px;
   }
   .wrap .inner::before {
     width: 447px;
+    height: 1450px;
     background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/4EC9B94_EC9584EC9DB4ED8FB02.png');
     background-size: contain;
-    height: 1450px;
   }
   .wrap .inner .inner_box {
     width: 447px;
@@ -109,8 +120,8 @@ padding: 0 30px;
   }
   /* BELLYGON */
   .wrap .inner .inner_box .bellygom {
-    width: 100%;
     display: block;
+    width: 100%;
   }
   .wrap .inner .inner_box .bellygom > img {
     width: 200px;
@@ -129,9 +140,9 @@ padding: 0 30px;
   }
   /* GGONYANG */
   .wrap .inner .inner_box .ggoyang {
-    width: 100%;
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
     margin-top: 370px;
   }
   .wrap .inner .inner_box .ggoyang > img {

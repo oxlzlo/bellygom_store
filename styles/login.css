@@ -3,14 +3,17 @@
 }
 
 .wrap .inner::before {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 1000px;
+
   content: "";
   background-image: url('https://bellygom.com/web/upload/NNEditor/20230331/copy-1680225136-4EC9B94EC9EA0EC8BA4_PC16.9_2.jpg');
   background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 1000px;
+
   opacity: .2;
-  z-index: -1;
 }
 
 .wrap .inner {
@@ -18,29 +21,33 @@
 }
 
 .wrap .inner .loginBox {
-  width: 500px;
-  height: 500px;
-  background-color: pink;
   position: absolute;
   top: 200px;
   left: 50%;
   transform: translateX(-50%);
+
+  width: 500px;
+  height: 500px;
+
+  background-color: pink;
   border-radius: 20px;
 }
 
 .wrap .inner .loginBox .image img {
   width: 200px;
   height: 200px;
+
   margin: 50px 0 0 150px;
 }
 
 .wrap .inner .loginBox .idBox,
 .wrap .inner .loginBox .pwBox {
-  width: 300px;
-  height: 40px;
-  margin: 40px 0 0 100px;
   position: relative;
 
+  width: 300px;
+  height: 40px;
+
+  margin: 40px 0 0 100px;
 }
 
 .wrap .inner .loginBox .pwBox {
@@ -49,46 +56,57 @@
 
 .wrap .inner .loginBox .idBox img,
 .wrap .inner .loginBox .pwBox img {
-  height: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding-left: 20px;
   z-index: 10;
+
+  height: 20px;
+
+  padding-left: 20px;
+
   color: #000;
 }
 
 .wrap .inner .loginBox .idBox input,
 .wrap .inner .loginBox .pwBox input {
-  width: 238px;
-  height: 40px;
-  border: 0;
-  outline: none;
-  font-size: 15px;
-  background-color: #ffdfdf;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
+  width: 238px;
+  height: 40px;
+
   padding-left: 60px;
+
+  font-size: 15px;
+  
+  background-color: #ffdfdf;
+  border: 0;
+  outline: none;
   border-radius: 10px;
 }
 
 .wrap .inner .loginBox .btnBox {
-  width: 250px;
-  height: 50px;
-  margin-left: 125px;
-  margin-top: 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 250px;
+  height: 50px;
+
+  margin-left: 125px;
+  margin-top: 45px;
 }
 
 .wrap .inner .loginBox .btnBox .btn {
-  width: 100px;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 100px;
+  height: 50px;
+
   background-color: #ffdfdf;
   border-radius: 10px;
   cursor: pointer;
@@ -105,8 +123,8 @@
     background-size: cover;
   }
   .wrap .inner .loginBox {
-    width: 350px;
     top: 200px;
+    width: 350px;
   }
   .wrap .inner .loginBox .image img {
     width: 170px;
